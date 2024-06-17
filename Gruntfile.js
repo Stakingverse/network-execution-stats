@@ -31,7 +31,7 @@ var styles = [
 ];
 
 module.exports = function(grunt) {
-	scripts.unshift(grunt.option('configPath') || 'src/js/defaultConfig.js');
+	scripts.unshift(grunt.option('configPath') || 'src/js/luksoConfig.js');
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),

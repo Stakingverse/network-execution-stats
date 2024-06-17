@@ -1,5 +1,5 @@
 FROM node:lts-alpine AS builder
-ARG GRUNT_TASK=default
+ARG GRUNT_TASK=poa
 WORKDIR /ethstats-server
 COPY ["package.json", "package-lock.json*", "./"]
 RUN npm ci --only=production && npm install -g grunt-cli
